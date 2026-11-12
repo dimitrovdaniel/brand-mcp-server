@@ -1,6 +1,10 @@
 /** HTML fixtures shared by the browser tests and the eval cases. */
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const logoSvg = fs.readFileSync(fileURLToPath(new URL('../brands/haferglueck/logos/primary.svg', import.meta.url)), 'utf8');
 const logo = (w: number) =>
-  `<img data-brand-logo alt="Haferglück" width="${w}" height="${Math.round(w / 3.75)}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 64'%3E%3Crect width='240' height='64' fill='%231F4D3A'/%3E%3C/svg%3E">`;
+  `<img data-brand-logo alt="Haferglück" width="${w}" height="${Math.round(w / 3.75)}" src="data:image/svg+xml,${encodeURIComponent(logoSvg)}">`;
 
 export const goodAd = `<!doctype html><html lang="de"><head><title>Anzeige</title></head><body style="margin:0">
 <div style="box-sizing:border-box;width:300px;height:250px;position:relative;background:#FBF7EF;border:1px solid #E3D3B4;font-family:Inter">
