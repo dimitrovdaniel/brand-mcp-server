@@ -1,0 +1,188 @@
+{
+  "color": {
+    "$type": "color",
+    "$description": "Figma collection \"Color\". Primitives are the palette; product code uses the semantic layer.",
+    "primitive": {
+      "sand": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9843,
+              0.9686,
+              0.9412
+            ],
+            "hex": "#FBF7F0"
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9412,
+              0.8941,
+              0.8118
+            ],
+            "hex": "#F0E4CF"
+          }
+        }
+      },
+      "coral": {
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8863,
+              0.3765,
+              0.2471
+            ],
+            "hex": "#E2603F"
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.6588,
+              0.251,
+              0.1647
+            ],
+            "hex": "#A8402A"
+          }
+        }
+      },
+      "navy": {
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1412,
+              0.251,
+              0.4196
+            ],
+            "hex": "#24406B"
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0588,
+              0.1333,
+              0.251
+            ],
+            "hex": "#0F2240"
+          }
+        }
+      },
+      "sky": {
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8627,
+              0.9333,
+              0.9765
+            ],
+            "hex": "#DCEEF9"
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5569,
+              0.7725,
+              0.9098
+            ],
+            "hex": "#8EC5E8"
+          }
+        }
+      },
+      "grey": {
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3686,
+              0.3922,
+              0.4392
+            ],
+            "hex": "#5E6470"
+          }
+        }
+      },
+      "white": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "text": {
+      "default": {
+        "$value": "{color.primitive.navy.900}"
+      },
+      "muted": {
+        "$value": "{color.primitive.grey.600}"
+      },
+      "inverse": {
+        "$value": "{color.primitive.white}"
+      },
+      "brand": {
+        "$value": "{color.primitive.coral.700}"
+      }
+    },
+    "surface": {
+      "default": {
+        "$value": "{color.primitive.white}"
+      },
+      "subtle": {
+        "$value": "{color.primitive.sand.50}"
+      },
+      "brand": {
+        "$value": "{color.primitive.navy.900}"
+      },
+      "accent": {
+        "$value": "{color.primitive.sky.100}"
+      }
+    },
+    "action": {
+      "primary": {
+        "$value": "{color.primitive.coral.700}"
+      },
+      "primary-hover": {
+        "$value": "{color.primitive.navy.900}"
+      },
+      "on-primary": {
+        "$value": "{color.primitive.white}"
+      }
+    },
+    "accent": {
+      "default": {
+        "$value": "{color.primitive.coral.500}"
+      },
+      "secondary": {
+        "$value": "{color.primitive.sky.300}"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{color.primitive.sand.200}"
+      }
+    },
+    "feedback": {
+      "error": {
+        "$value": "{color.primitive.coral.700}"
+      },
+      "success": {
+        "$value": "{color.primitive.navy.700}"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "haferglueck",
+  "name": "Haferglück",
+  "tokenPrefix": "hg",
+  "category": "Oat drinks and breakfast",
+  "market": "DE",
+  "locale": "de-DE",
+  "summary": "Oat drinks and granola from Bavarian oats. Warm, a little cheeky, never preachy. Speaks to young families and students with “du”.",
+  "personality": ["warm", "cheeky", "down-to-earth", "honest about ingredients"],
+  "fonts": {
+    "display": { "family": "Fraunces", "weights": [700], "source": "Google Fonts", "license": "SIL OFL 1.1" },
+    "body": { "family": "Inter", "weights": [400, 500, 700], "source": "Google Fonts", "license": "SIL OFL 1.1" }
+  },
+  "logos": [
+    {
+      "id": "primary",
+      "file": "logos/primary.svg",
+      "use": "Default logo on light surfaces (oat, white).",
+      "backgrounds": ["color.surface.default", "color.surface.subtle", "color.primitive.white", "color.surface.accent"],
+      "minWidthPx": 96,
+      "minWidthMm": 25,
+      "clearSpace": 0.5
+    },
+    {
+      "id": "inverse",
+      "file": "logos/inverse.svg",
+      "use": "On forest green or on dark, calm photo areas.",
+      "backgrounds": ["color.surface.brand", "color.primitive.forest.900", "color.primitive.ink.900"],
+      "minWidthPx": 96,
+      "minWidthMm": 25,
+      "clearSpace": 0.5
+    },
+    {
+      "id": "mark",
+      "file": "logos/mark.svg",
+      "use": "The oat grain alone. App icons, favicons, social avatars. Never next to the full logo.",
+      "backgrounds": ["color.surface.default", "color.surface.subtle", "color.surface.brand", "color.surface.accent"],
+      "minWidthPx": 24,
+      "minWidthMm": 6,
+      "clearSpace": 0.25
+    }
+  ],
+  "layout": {
+    "minBodyFontPx": 16,
+    "minTapTargetPx": 44,
+    "maxLineLengthCh": 70,
+    "gridColumns": 12,
+    "logoPlacement": ["top-left", "bottom-right"]
+  },
+  "visual": {
+    "minPaletteCoverage": 0.6,
+    "requiredColors": ["color.surface.default", "color.action.primary"]
+  }
+}

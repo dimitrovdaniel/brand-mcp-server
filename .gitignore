@@ -1,0 +1,9 @@
+node_modules/
+build/
+src/generated/
+evals/results/
+.env
+.env.*
+!.env.example
+.vercel/
+*.log

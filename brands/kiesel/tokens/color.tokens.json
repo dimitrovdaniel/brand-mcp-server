@@ -1,0 +1,199 @@
+{
+  "color": {
+    "$type": "color",
+    "$description": "Figma collection \"Color\". Primitives are the palette; product code uses the semantic layer.",
+    "primitive": {
+      "slate": {
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3569,
+              0.4196,
+              0.4588
+            ],
+            "hex": "#5B6B75"
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1725,
+              0.2431,
+              0.2902
+            ],
+            "hex": "#2C3E4A"
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0863,
+              0.1333,
+              0.1686
+            ],
+            "hex": "#16222B"
+          }
+        }
+      },
+      "pebble": {
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.949,
+              0.9529,
+              0.9412
+            ],
+            "hex": "#F2F3F0"
+          }
+        },
+        "200": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8941,
+              0.9059,
+              0.8902
+            ],
+            "hex": "#E4E7E3"
+          }
+        }
+      },
+      "aqua": {
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1216,
+              0.6078,
+              0.651
+            ],
+            "hex": "#1F9BA6"
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0745,
+              0.4157,
+              0.451
+            ],
+            "hex": "#136A73"
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0431,
+              0.2667,
+              0.2902
+            ],
+            "hex": "#0B444A"
+          }
+        }
+      },
+      "lime": {
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7098,
+              0.8275,
+              0.2039
+            ],
+            "hex": "#B5D334"
+          }
+        }
+      },
+      "red": {
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7686,
+              0.2118,
+              0.1686
+            ],
+            "hex": "#C4362B"
+          }
+        }
+      },
+      "white": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "text": {
+      "default": {
+        "$value": "{color.primitive.slate.900}"
+      },
+      "muted": {
+        "$value": "{color.primitive.slate.500}"
+      },
+      "inverse": {
+        "$value": "{color.primitive.white}"
+      },
+      "brand": {
+        "$value": "{color.primitive.aqua.700}"
+      }
+    },
+    "surface": {
+      "default": {
+        "$value": "{color.primitive.white}"
+      },
+      "subtle": {
+        "$value": "{color.primitive.pebble.100}"
+      },
+      "brand": {
+        "$value": "{color.primitive.aqua.700}"
+      },
+      "accent": {
+        "$value": "{color.primitive.lime.400}"
+      }
+    },
+    "action": {
+      "primary": {
+        "$value": "{color.primitive.aqua.700}"
+      },
+      "primary-hover": {
+        "$value": "{color.primitive.aqua.900}"
+      },
+      "on-primary": {
+        "$value": "{color.primitive.white}"
+      }
+    },
+    "accent": {
+      "default": {
+        "$value": "{color.primitive.lime.400}"
+      },
+      "secondary": {
+        "$value": "{color.primitive.aqua.500}"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{color.primitive.pebble.200}"
+      }
+    },
+    "feedback": {
+      "error": {
+        "$value": "{color.primitive.red.600}"
+      },
+      "success": {
+        "$value": "{color.primitive.aqua.700}"
+      }
+    }
+  }
+}

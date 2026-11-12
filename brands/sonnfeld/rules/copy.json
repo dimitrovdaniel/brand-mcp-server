@@ -1,0 +1,85 @@
+{
+  "$description": "Copy rules for German-language marketing.",
+  "addressForm": "sie",
+  "brandName": {
+    "correct": "Sonnfeld",
+    "wrong": [
+      "SONNFELD",
+      "Sonnenfeld",
+      "Sonn-Feld"
+    ]
+  },
+  "maxExclamationMarks": 0,
+  "forbidden": [
+    {
+      "term": "Sunblocker",
+      "severity": "error",
+      "reason": "No sunscreen offers full protection; “sunblock” is excluded by EU Commission Recommendation 2006/647/EC.",
+      "suggestion": "Sonnenschutz mit LSF 50+"
+    },
+    {
+      "term": "Sonnenblocker",
+      "severity": "error",
+      "reason": "Excluded by Recommendation 2006/647/EC.",
+      "suggestion": "Sonnenschutz mit LSF 50+"
+    },
+    {
+      "term": "100 % Schutz",
+      "severity": "error",
+      "reason": "Implies total protection (2006/647/EC).",
+      "suggestion": "sehr hoher Schutz (LSF 50+)"
+    },
+    {
+      "term": "Totalschutz",
+      "severity": "error",
+      "reason": "Implies total protection (2006/647/EC).",
+      "suggestion": "sehr hoher Schutz"
+    },
+    {
+      "term": "vollständiger Schutz",
+      "severity": "error",
+      "reason": "Implies total protection (2006/647/EC).",
+      "suggestion": "hoher Schutz vor UVA- und UVB-Strahlung"
+    },
+    {
+      "term": "ganztägig",
+      "severity": "error",
+      "reason": "Implies no reapplication needed (2006/647/EC).",
+      "suggestion": "wasserfest; regelmäßig nachcremen"
+    },
+    {
+      "term": "kein Nachcremen",
+      "severity": "error",
+      "reason": "Implies no reapplication needed (2006/647/EC).",
+      "suggestion": "Remove."
+    },
+    {
+      "term": "Anti-Aging",
+      "severity": "warning",
+      "reason": "Anglicism and a claim that needs a study reference.",
+      "suggestion": "schützt vor lichtbedingter Hautalterung"
+    },
+    {
+      "term": "Glow",
+      "severity": "warning",
+      "reason": "Anglicism; Sonnfeld speaks German.",
+      "suggestion": "Frische / gesunder Teint"
+    }
+  ],
+  "requiredDisclaimers": [],
+  "preferred": [
+    {
+      "avoid": "Sonnencreme für alle",
+      "use": "für empfindliche Haut / für Kinderhaut",
+      "reason": "Name the skin type."
+    }
+  ],
+  "cta": {
+    "labels": [
+      "Mehr erfahren",
+      "Produkt finden",
+      "Zum Hauttyp-Test"
+    ],
+    "maxChars": 20
+  }
+}

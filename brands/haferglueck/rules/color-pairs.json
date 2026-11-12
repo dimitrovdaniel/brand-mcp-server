@@ -1,0 +1,142 @@
+{
+  "$description": "Allowed foreground/background token pairs. usage: text = body text (WCAG AA 4.5:1), large-text = 24px+ or 19px bold (3:1), ui = icons, borders, focus rings (3:1).",
+  "pairs": [
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.accent",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.accent",
+      "usage": [
+        "large-text",
+        "ui"
+      ],
+      "note": "Sun yellow only takes muted text at 24px+ or 19px bold."
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.accent",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.inverse",
+      "background": "color.surface.brand",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.accent.default",
+      "background": "color.surface.brand",
+      "usage": [
+        "text",
+        "large-text"
+      ],
+      "note": "Signature pairing: sun yellow headline on forest green."
+    },
+    {
+      "foreground": "color.accent.secondary",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ],
+      "note": "Berry is for prices, badges and one highlight per layout."
+    },
+    {
+      "foreground": "color.action.on-primary",
+      "background": "color.action.primary",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.feedback.success",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "foreground": "color.text.inverse",
+      "background": "color.surface.accent",
+      "reason": "White on sun yellow is 1.9:1 and unreadable."
+    },
+    {
+      "foreground": "color.accent.secondary",
+      "background": "color.surface.brand",
+      "reason": "Berry on forest green vibrates and is 1.7:1."
+    },
+    {
+      "foreground": "color.accent.default",
+      "background": "color.surface.default",
+      "reason": "Sun yellow on oat is decoration only (1.7:1). Never use it for text."
+    }
+  ]
+}

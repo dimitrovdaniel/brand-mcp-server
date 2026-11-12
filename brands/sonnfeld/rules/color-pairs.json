@@ -1,0 +1,137 @@
+{
+  "$description": "Allowed foreground/background token pairs. usage: text = body text (WCAG AA 4.5:1), large-text = 24px+ or 19px bold (3:1), ui = icons, borders, focus rings (3:1).",
+  "pairs": [
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.accent",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.accent",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.accent",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.inverse",
+      "background": "color.surface.brand",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.action.on-primary",
+      "background": "color.action.primary",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.accent.secondary",
+      "background": "color.surface.brand",
+      "usage": [
+        "text",
+        "large-text"
+      ],
+      "note": "Sky on navy: the evening look."
+    },
+    {
+      "foreground": "color.accent.default",
+      "background": "color.surface.brand",
+      "usage": [
+        "text",
+        "large-text"
+      ],
+      "note": "Coral on navy just passes (4.5:1). Use 18px+ where possible."
+    },
+    {
+      "foreground": "color.accent.default",
+      "background": "color.surface.default",
+      "usage": [
+        "large-text",
+        "ui"
+      ],
+      "note": "Coral 500 on white: icons and 24px+ display type only."
+    }
+  ],
+  "forbidden": [
+    {
+      "foreground": "color.accent.secondary",
+      "background": "color.surface.default",
+      "reason": "Sky on white is 1.9:1 and disappears outdoors."
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.brand",
+      "reason": "Coral 700 on navy is 2.6:1."
+    }
+  ]
+}

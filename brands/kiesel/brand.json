@@ -1,0 +1,54 @@
+{
+  "id": "kiesel",
+  "name": "Kiesel",
+  "tokenPrefix": "ks",
+  "category": "Household cleaning, refills and disinfectants",
+  "market": "DE",
+  "locale": "de-DE",
+  "summary": "Cleaning products in refill bottles. Factual, clear and calm, with numbers instead of promises. Speaks to households with “du”.",
+  "personality": ["clear", "factual", "calm", "quietly confident"],
+  "fonts": {
+    "display": { "family": "Space Grotesk", "weights": [500, 700], "source": "Google Fonts", "license": "SIL OFL 1.1" },
+    "body": { "family": "IBM Plex Sans", "weights": [400, 500, 700], "source": "Google Fonts", "license": "SIL OFL 1.1" }
+  },
+  "logos": [
+    {
+      "id": "primary",
+      "file": "logos/primary.svg",
+      "use": "Default logo on white and pebble surfaces.",
+      "backgrounds": ["color.surface.default", "color.surface.subtle", "color.surface.accent"],
+      "minWidthPx": 80,
+      "minWidthMm": 20,
+      "clearSpace": 1
+    },
+    {
+      "id": "inverse",
+      "file": "logos/inverse.svg",
+      "use": "On aqua or slate surfaces.",
+      "backgrounds": ["color.surface.brand", "color.primitive.slate.900", "color.primitive.aqua.900"],
+      "minWidthPx": 80,
+      "minWidthMm": 20,
+      "clearSpace": 1
+    },
+    {
+      "id": "mark",
+      "file": "logos/mark.svg",
+      "use": "The pebble alone. Icons and avatars only.",
+      "backgrounds": ["color.surface.default", "color.surface.subtle", "color.surface.brand"],
+      "minWidthPx": 20,
+      "minWidthMm": 5,
+      "clearSpace": 0.5
+    }
+  ],
+  "layout": {
+    "minBodyFontPx": 16,
+    "minTapTargetPx": 44,
+    "maxLineLengthCh": 75,
+    "gridColumns": 12,
+    "logoPlacement": ["top-left"]
+  },
+  "visual": {
+    "minPaletteCoverage": 0.7,
+    "requiredColors": ["color.action.primary"]
+  }
+}

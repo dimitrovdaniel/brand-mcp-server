@@ -1,0 +1,37 @@
+{
+  "$description": "Which shared ad slots this brand books, plus brand defaults and per-slot overrides.",
+  "allowed": [
+    "medium-rectangle",
+    "leaderboard",
+    "half-page",
+    "billboard",
+    "mobile-banner",
+    "instagram-feed-portrait",
+    "instagram-story",
+    "dooh-landscape"
+  ],
+  "defaults": {
+    "logo": "primary",
+    "logoMinWidthPx": 72,
+    "logoPlacement": [
+      "top-left",
+      "bottom-right"
+    ],
+    "backgrounds": [
+      "color.surface.default",
+      "color.surface.brand",
+      "color.surface.accent"
+    ]
+  },
+  "overrides": {
+    "mobile-banner": {
+      "logo": "mark",
+      "logoMinWidthPx": 24
+    },
+    "leaderboard": {
+      "logoPlacement": [
+        "left"
+      ]
+    }
+  }
+}

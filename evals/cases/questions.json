@@ -1,0 +1,20 @@
+{
+  "$description": "Verifiable questions for the agent eval: a model gets only the MCP tools and must answer correctly. Each answer is checked mechanically (exact, includes, regex or oneOf, case-insensitive). Run with ANTHROPIC_API_KEY set: npm run eval:agent",
+  "questions": [
+    { "id": "q-hg-primary-hex", "question": "What is the hex value of Haferglück's primary button colour?", "answer": { "type": "exact", "value": "#1F4D3A" } },
+    { "id": "q-ks-cta-var", "question": "Which CSS custom property should a Kiesel button use for its background?", "answer": { "type": "exact", "value": "--ks-color-action-primary" } },
+    { "id": "q-sf-address", "question": "Does Sonnfeld address customers with “du” or “Sie”? Answer with one word.", "answer": { "type": "exact", "value": "Sie" } },
+    { "id": "q-hg-oatmilk", "question": "Haferglück wants the headline „Die neue Hafermilch“. What word must replace “Hafermilch”?", "answer": { "type": "includes", "value": "Haferdrink" } },
+    { "id": "q-ks-biocide", "question": "What exact sentence must every Kiesel disinfectant ad contain?", "answer": { "type": "includes", "value": "Biozidprodukte vorsichtig verwenden" } },
+    { "id": "q-hg-logo-clear", "question": "How much clear space does the Haferglück logo need, as a fraction of the logo height?", "answer": { "type": "oneOf", "value": ["0.5", "1/2", "half"] } },
+    { "id": "q-ks-logo-min", "question": "What is the minimum width in pixels of the Kiesel full logo in a display ad?", "answer": { "type": "exact", "value": "64" } },
+    { "id": "q-sf-no-mobile", "question": "Which of these slots does Sonnfeld not book: medium-rectangle, mobile-banner, billboard? Answer with the slot id.", "answer": { "type": "exact", "value": "mobile-banner" } },
+    { "id": "q-hg-leaderboard-size", "question": "What are the pixel dimensions of a Haferglück leaderboard ad? Answer as WIDTHxHEIGHT.", "answer": { "type": "regex", "value": "^728\\s*[x×]\\s*90$" } },
+    { "id": "q-hg-white-on-yellow", "question": "May a Haferglück designer set white text on the sun-yellow surface? Answer yes or no.", "answer": { "type": "exact", "value": "no" } },
+    { "id": "q-sf-sky-on-navy", "question": "What is the WCAG contrast ratio of Sonnfeld's accent.secondary on surface.brand, rounded to one decimal?", "answer": { "type": "exact", "value": "8.5" } },
+    { "id": "q-ks-exclamation", "question": "How many exclamation marks may a Kiesel text contain? Answer with a number.", "answer": { "type": "exact", "value": "0" } },
+    { "id": "q-sf-logo-on-navy", "question": "Which Sonnfeld logo version goes on the navy brand surface? Answer with the version id.", "answer": { "type": "exact", "value": "inverse" } },
+    { "id": "q-hg-nearest", "question": "A designer used #1E4C39 in Haferglück code. Which semantic token should the button background use instead? Answer with the token path.", "answer": { "type": "exact", "value": "color.action.primary" } },
+    { "id": "q-sf-check-copy", "question": "Is the Sonnfeld headline „Ihr Sunblocker für den ganzen Tag“ allowed? Answer yes or no.", "answer": { "type": "exact", "value": "no" } }
+  ]
+}

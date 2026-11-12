@@ -1,0 +1,141 @@
+{
+  "$description": "Allowed foreground/background token pairs. usage: text = body text (WCAG AA 4.5:1), large-text = 24px+ or 19px bold (3:1), ui = icons, borders, focus rings (3:1).",
+  "pairs": [
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.default",
+      "background": "color.surface.accent",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.muted",
+      "background": "color.surface.accent",
+      "usage": [
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.subtle",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    },
+    {
+      "foreground": "color.text.brand",
+      "background": "color.surface.accent",
+      "usage": [
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.text.inverse",
+      "background": "color.surface.brand",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.action.on-primary",
+      "background": "color.action.primary",
+      "usage": [
+        "text",
+        "large-text",
+        "ui"
+      ]
+    },
+    {
+      "foreground": "color.accent.default",
+      "background": "color.surface.brand",
+      "usage": [
+        "large-text",
+        "ui"
+      ],
+      "note": "Lime on aqua: large numbers and icons only."
+    },
+    {
+      "foreground": "color.accent.secondary",
+      "background": "color.surface.default",
+      "usage": [
+        "large-text",
+        "ui"
+      ],
+      "note": "Light aqua: icons, rules and 24px+ headings only."
+    },
+    {
+      "foreground": "color.feedback.error",
+      "background": "color.surface.default",
+      "usage": [
+        "text",
+        "large-text"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "foreground": "color.text.inverse",
+      "background": "color.surface.accent",
+      "reason": "White on lime is 1.7:1."
+    },
+    {
+      "foreground": "color.feedback.error",
+      "background": "color.surface.brand",
+      "reason": "Red on aqua is 1.2:1 and reads as a mistake."
+    },
+    {
+      "foreground": "color.accent.secondary",
+      "background": "color.surface.subtle",
+      "reason": "Light aqua on pebble is 3.0:1; it fails even large-text in practice on matte print."
+    }
+  ]
+}

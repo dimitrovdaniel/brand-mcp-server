@@ -1,0 +1,99 @@
+{
+  "$description": "Copy rules for German-language marketing.",
+  "addressForm": "du",
+  "brandName": {
+    "correct": "Kiesel",
+    "wrong": [
+      "KIESEL",
+      "kiesel",
+      "Kiesel®"
+    ]
+  },
+  "maxExclamationMarks": 0,
+  "forbidden": [
+    {
+      "term": "chemiefrei",
+      "severity": "error",
+      "reason": "Every cleaner is chemistry; the claim misleads (UWG § 5).",
+      "suggestion": "Name the ingredients, e.g. “auf Basis von Zitronensäure”."
+    },
+    {
+      "term": "umweltfreundlich",
+      "severity": "error",
+      "reason": "Unspecific green claims mislead (UWG § 5) and are banned in biocide ads (BPR Art. 72(3)).",
+      "suggestion": "Concrete fact, e.g. “Nachfüllbeutel spart 70 % Plastik gegenüber der Flasche”."
+    },
+    {
+      "term": "klimaneutral",
+      "severity": "error",
+      "reason": "Requires explanation in the ad (BGH, I ZR 98/23). Not used by the brand.",
+      "suggestion": "Name the measure."
+    },
+    {
+      "term": "ungiftig",
+      "severity": "error",
+      "reason": "Banned wording in biocide advertising (BPR Art. 72(3)).",
+      "suggestion": "Remove."
+    },
+    {
+      "term": "unschädlich",
+      "severity": "error",
+      "reason": "Banned wording in biocide advertising (BPR Art. 72(3)).",
+      "suggestion": "Remove."
+    },
+    {
+      "term": "natürlich",
+      "severity": "warning",
+      "reason": "Banned for biocides (BPR Art. 72(3)); for cleaners only with proof.",
+      "suggestion": "Name the ingredient."
+    },
+    {
+      "term": "tierfreundlich",
+      "severity": "error",
+      "reason": "Banned wording in biocide advertising (BPR Art. 72(3)).",
+      "suggestion": "Remove."
+    },
+    {
+      "term": "99,9 %",
+      "severity": "warning",
+      "reason": "Germ-kill percentages need the test standard (e.g. EN 1276) next to them.",
+      "suggestion": "“wirkt gegen 99,9 % der Bakterien (EN 1276)”"
+    }
+  ],
+  "requiredDisclaimers": [
+    {
+      "id": "biocide",
+      "whenAny": [
+        "desinfektion",
+        "desinfiziert",
+        "desinfizierend",
+        "hygienespüler",
+        "keimfrei",
+        "antibakteriell",
+        "biozid"
+      ],
+      "text": "Biozidprodukte vorsichtig verwenden. Vor Gebrauch stets Etikett und Produktinformationen lesen.",
+      "reason": "Mandatory sentence in all advertising for biocidal products (Reg. 528/2012 Art. 72(1))."
+    }
+  ],
+  "preferred": [
+    {
+      "avoid": "super",
+      "use": "a number",
+      "reason": "Kiesel proves, it does not hype."
+    },
+    {
+      "avoid": "Power",
+      "use": "Wirkung",
+      "reason": "No anglicisms for effect claims."
+    }
+  ],
+  "cta": {
+    "labels": [
+      "Nachfüllen",
+      "Mehr erfahren",
+      "Zum Shop"
+    ],
+    "maxChars": 16
+  }
+}

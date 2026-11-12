@@ -1,0 +1,46 @@
+{
+  "name": "brand-mcp-server",
+  "version": "1.0.0",
+  "description": "Remote MCP server for brand guidelines, DTCG design tokens, logos and ad formats, with check tools for code, copy, ads and rendered pages.",
+  "scripts": {
+    "build:brands": "tsx scripts/build-data.ts",
+    "build:tokens": "tsx scripts/build-tokens.ts",
+    "figma:export": "tsx scripts/figma-export.ts",
+    "typecheck": "tsc -p .",
+    "pretest": "npm run build:brands",
+    "test": "vitest run",
+    "eval": "tsx evals/run.ts",
+    "eval:agent": "tsx evals/run.ts --agent",
+    "prestart": "npm run build:brands",
+    "start": "tsx src/node.ts",
+    "dev": "tsx watch src/node.ts",
+    "stdio": "tsx src/stdio.ts",
+    "inspector": "npx @modelcontextprotocol/inspector"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@modelcontextprotocol/node": "^2.1.2",
+    "@modelcontextprotocol/server": "^2.4.0",
+    "axe-core": "^4.14.0",
+    "jose": "^6.2.17",
+    "playwright": "^1.65.0",
+    "pngjs": "^7.0.0",
+    "style-dictionary": "^5.8.0",
+    "zod": "^4.6.7",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@types/node": "^26.6.6",
+    "@types/pngjs": "^6.0.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0",
+    "@modelcontextprotocol/client": "^2.4.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

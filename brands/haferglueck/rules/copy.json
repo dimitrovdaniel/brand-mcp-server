@@ -1,0 +1,75 @@
+{
+  "$description": "Copy rules for German-language marketing.",
+  "addressForm": "du",
+  "brandName": {
+    "correct": "Haferglück",
+    "wrong": [
+      "Hafer Glück",
+      "Hafer-Glück",
+      "HAFERGLÜCK",
+      "Haferglueck",
+      "HaferGlück"
+    ]
+  },
+  "maxExclamationMarks": 1,
+  "forbidden": [
+    {
+      "term": "Hafermilch",
+      "severity": "error",
+      "reason": "“Milch” is reserved for animal milk under EU law (Reg. 1308/2013, CJEU C-422/16 “TofuTown”).",
+      "suggestion": "Haferdrink"
+    },
+    {
+      "term": "Milch",
+      "severity": "error",
+      "reason": "Plant drinks must not be called milk (Reg. 1308/2013).",
+      "suggestion": "Drink / Haferdrink"
+    },
+    {
+      "term": "gesund",
+      "severity": "error",
+      "reason": "General health claims need an authorised specific claim (Health Claims Reg. 1924/2006, Art. 10).",
+      "suggestion": "Describe ingredients factually, e.g. “mit Ballaststoffen aus Hafer”."
+    },
+    {
+      "term": "klimaneutral",
+      "severity": "error",
+      "reason": "Courts require the basis to be explained in the ad itself (BGH, I ZR 98/23, 2024). Not used by the brand.",
+      "suggestion": "Name the concrete measure, e.g. “Hafer aus Bayern, 120 km bis zur Abfüllung”."
+    },
+    {
+      "term": "100 % natürlich",
+      "severity": "warning",
+      "reason": "Absolute naturalness claims are hard to prove.",
+      "suggestion": "ohne Zusatz von Zucker / mit 4 Zutaten"
+    },
+    {
+      "term": "zuckerfrei",
+      "severity": "warning",
+      "reason": "Only allowed at ≤ 0.5 g sugar per 100 ml (Reg. 1924/2006 annex). Check the product.",
+      "suggestion": "ohne Zuckerzusatz (only if true)"
+    }
+  ],
+  "requiredDisclaimers": [],
+  "preferred": [
+    {
+      "avoid": "Kunden",
+      "use": "du / ihr",
+      "reason": "We talk to people, not customers."
+    },
+    {
+      "avoid": "Produkt",
+      "use": "Haferdrink / Granola",
+      "reason": "Name the thing."
+    }
+  ],
+  "cta": {
+    "labels": [
+      "Jetzt probieren",
+      "Mehr erfahren",
+      "Zum Rezept",
+      "Im Shop ansehen"
+    ],
+    "maxChars": 20
+  }
+}

@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Brand repo, tests and tool evals
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Validate and build brands (DTCG → Style Dictionary)
+        run: npm run build:brands
+      - run: npm run typecheck
+      - run: npm test
+      - name: Tool evals
+        run: npm run eval
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: evals/results/
+
+  agent-eval:
+    name: Agent eval (Claude answers with the MCP tools)
+    needs: test
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.ANTHROPIC_API_KEY != ''
+      - uses: actions/setup-node@v4
+        if: env.ANTHROPIC_API_KEY != ''
+        with:
+          node-version: 24
+          cache: npm
+      - if: env.ANTHROPIC_API_KEY != ''
+        run: npm ci && npm run build:brands && npm run eval:agent
+      - if: env.ANTHROPIC_API_KEY == ''
+        run: echo "ANTHROPIC_API_KEY secret not set; agent eval skipped." >> "$GITHUB_STEP_SUMMARY"
+
+  docker:
+    name: Container smoke test
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t brand-mcp .
+      - name: Start and call the server over HTTP
+        run: |
+          docker run -d --name mcp -p 3000:3000 -e ALLOW_ANONYMOUS=true -e MCP_PUBLIC_URL=http://localhost:3000/mcp brand-mcp
+          for i in $(seq 1 30); do curl -sf http://localhost:3000/healthz && break; sleep 1; done
+          curl -sf -X POST http://localhost:3000/mcp \
+            -H 'content-type: application/json' -H 'accept: application/json, text/event-stream' \
+            -H 'mcp-protocol-version: 2025-06-18' \
+            -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"ci","version":"1"}}}' | tee init.txt
+          grep -q brand-mcp-server init.txt
+      - if: always()
+        run: docker logs mcp || true

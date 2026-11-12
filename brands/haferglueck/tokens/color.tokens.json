@@ -1,0 +1,210 @@
+{
+  "color": {
+    "$type": "color",
+    "$description": "Figma collection \"Color\". Primitives are the palette; product code uses the semantic layer.",
+    "primitive": {
+      "oat": {
+        "50": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9843,
+              0.9686,
+              0.9373
+            ],
+            "hex": "#FBF7EF"
+          }
+        },
+        "100": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9647,
+              0.9373,
+              0.8863
+            ],
+            "hex": "#F6EFE2"
+          }
+        },
+        "300": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8902,
+              0.8275,
+              0.7059
+            ],
+            "hex": "#E3D3B4"
+          }
+        },
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5412,
+              0.451,
+              0.3137
+            ],
+            "hex": "#8A7350"
+          }
+        }
+      },
+      "forest": {
+        "500": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1804,
+              0.4902,
+              0.3569
+            ],
+            "hex": "#2E7D5B"
+          }
+        },
+        "700": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1216,
+              0.302,
+              0.2275
+            ],
+            "hex": "#1F4D3A"
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0706,
+              0.1882,
+              0.1216
+            ],
+            "hex": "#12301F"
+          }
+        }
+      },
+      "sun": {
+        "400": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.949,
+              0.702,
+              0.2392
+            ],
+            "hex": "#F2B33D"
+          }
+        }
+      },
+      "berry": {
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.698,
+              0.2275,
+              0.3569
+            ],
+            "hex": "#B23A5B"
+          }
+        }
+      },
+      "ink": {
+        "600": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3333,
+              0.3255,
+              0.298
+            ],
+            "hex": "#55534C"
+          }
+        },
+        "900": {
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1059,
+              0.1059,
+              0.0941
+            ],
+            "hex": "#1B1B18"
+          }
+        }
+      },
+      "white": {
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "text": {
+      "default": {
+        "$value": "{color.primitive.ink.900}"
+      },
+      "muted": {
+        "$value": "{color.primitive.ink.600}"
+      },
+      "inverse": {
+        "$value": "{color.primitive.white}"
+      },
+      "brand": {
+        "$value": "{color.primitive.forest.700}"
+      }
+    },
+    "surface": {
+      "default": {
+        "$value": "{color.primitive.oat.50}"
+      },
+      "subtle": {
+        "$value": "{color.primitive.oat.100}"
+      },
+      "brand": {
+        "$value": "{color.primitive.forest.700}"
+      },
+      "accent": {
+        "$value": "{color.primitive.sun.400}"
+      }
+    },
+    "action": {
+      "primary": {
+        "$value": "{color.primitive.forest.700}"
+      },
+      "primary-hover": {
+        "$value": "{color.primitive.forest.900}"
+      },
+      "on-primary": {
+        "$value": "{color.primitive.white}"
+      }
+    },
+    "accent": {
+      "default": {
+        "$value": "{color.primitive.sun.400}"
+      },
+      "secondary": {
+        "$value": "{color.primitive.berry.600}"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{color.primitive.oat.300}"
+      }
+    },
+    "feedback": {
+      "error": {
+        "$value": "{color.primitive.berry.600}"
+      },
+      "success": {
+        "$value": "{color.primitive.forest.500}"
+      }
+    }
+  }
+}

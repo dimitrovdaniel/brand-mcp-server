@@ -1,0 +1,13 @@
+{
+  "$description": "Organic and print formats shared by all brands.",
+  "formats": [
+    { "id": "instagram-square", "name": "Instagram post (1:1)", "channel": "social", "width": 1080, "height": 1080, "unit": "px", "safeMargin": 54 },
+    { "id": "linkedin-post", "name": "LinkedIn image post (1.91:1)", "channel": "social", "width": 1200, "height": 627, "unit": "px", "safeMargin": 40 },
+    { "id": "og-image", "name": "Open Graph / link preview", "channel": "web", "width": 1200, "height": 630, "unit": "px", "safeMargin": 60 },
+    { "id": "newsletter-header", "name": "Newsletter header", "channel": "email", "width": 600, "height": 240, "unit": "px", "safeMargin": 24, "notes": "Keep text live (HTML), not in the image, so it survives image blocking." },
+    { "id": "din-a4", "name": "DIN A4 flyer / poster", "channel": "print", "width": 210, "height": 297, "unit": "mm", "bleed": 3, "safeMargin": 10, "colorProfile": "PSO Coated v3 (FOGRA51)" },
+    { "id": "din-a5", "name": "DIN A5 flyer", "channel": "print", "width": 148, "height": 210, "unit": "mm", "bleed": 3, "safeMargin": 8, "colorProfile": "PSO Coated v3 (FOGRA51)" },
+    { "id": "din-lang", "name": "DIN lang flyer", "channel": "print", "width": 99, "height": 210, "unit": "mm", "bleed": 3, "safeMargin": 6, "colorProfile": "PSO Coated v3 (FOGRA51)" },
+    { "id": "city-light-poster", "name": "City-Light-Poster (CLP)", "channel": "ooh", "width": 1185, "height": 1750, "unit": "mm", "bleed": 10, "visibleArea": { "width": 1160, "height": 1710 }, "safeMargin": 40 }
+  ]
+}
